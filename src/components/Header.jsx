@@ -7,22 +7,26 @@ export default function Header() {
         <div className="flex items-center justify-between p-4">
           <img
             src={pigLogo}
-            className="h-8"
+            className="h-12 mr-3"
             alt="a pig - logo of smart spend"
           />
 
-          <h2 className="font-semibold text-2xl text-dark-green">
-            Smart Spend
-          </h2>
-          <h2 className="text-1xl text-bright-white">Personal Budgeting App</h2>
+          <div>
+            <h2 className="font-semibold text-2xl text-dark-green">
+              Smart Spend
+            </h2>
+            <h2 className="text-1xl text-bright-white">
+              Personal Budgeting App
+            </h2>
+          </div>
         </div>
 
-        <div>
-          <h2 className="block py-2 px-3 text-bright-white bg-money-green rounded">
+        <div className="flex items-center space-x-2 m-5">
+          <h2 className="block  text-bright-white bg-money-green rounded hover:text-light-grey">
             Login
           </h2>
 
-          <h2 className="block py-2 px-3 text-bright-white bg-money-green rounded">
+          <h2 className="block  text-bright-white bg-money-green rounded">
             Sign Up
           </h2>
         </div>
