@@ -1,14 +1,24 @@
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
 import AddAnExpense from "./components/AddAnExpense";
 import Header from "./components/Header";
 import LogIn from "./components/LogIn";
 import SetBudget from "./components/SetBudget";
 import SignUp from "./components/SignUp";
+import Root from "./pages/Root";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+  },
+]);
 
 function App() {
   return (
     <>
-      <Header />
+      <RouterProvider router={router} />
+
       <div className="flex h-screen ">
         <div className="flex-col m-auto">
           <h1 className="text-9xl text-bold">SMART SPEND</h1>
