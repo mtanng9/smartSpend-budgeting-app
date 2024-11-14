@@ -6,7 +6,7 @@ import SetBudget from "./pages/SetBudget";
 import SignUp from "./pages/SignUp";
 import Root from "./pages/Root";
 import InitialHomePage from "./pages/InitialHomePage";
-import LoggedInHomePage from "./LoggedInHomePage";
+import UserHomePage from "./UserHomePage";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
       { path: "set-budget", element: <SetBudget /> },
       { path: "sign-up", element: <SignUp /> },
       { path: "log-in", element: <LogIn /> },
-      { path: "user-home-page", element: <LoggedInHomePage /> },
+      { path: "user-home-page", element: <UserHomePage /> },
     ],
   },
 ]);

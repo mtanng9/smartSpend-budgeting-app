@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import pigLogo from "../assets/pig_icon.png";
 
 export default function Header() {
@@ -22,13 +23,30 @@ export default function Header() {
         </div>
 
         <div className="flex items-center space-x-2 m-5">
-          <h2 className="block  text-bright-white bg-money-green rounded hover:text-light-grey">
+          <NavLink
+            to="/"
+            className="block  text-bright-white bg-money-green rounded hover:text-light-grey"
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/user-home-page"
+            className="block  text-bright-white bg-money-green rounded hover:text-light-grey"
+          >
+            Dashboard
+          </NavLink>
+          <NavLink
+            to="/log-in"
+            className="block  text-bright-white bg-money-green rounded hover:text-light-grey"
+          >
             Login
-          </h2>
-
-          <h2 className="block  text-bright-white bg-money-green rounded">
+          </NavLink>
+          <NavLink
+            to="/sign-up"
+            className="block  text-bright-white bg-money-green rounded"
+          >
             Sign Up
-          </h2>
+          </NavLink>
         </div>
       </header>
     </>
