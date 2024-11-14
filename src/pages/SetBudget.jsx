@@ -1,4 +1,4 @@
-import ResetExpense from "./ResetExpense";
+import ResetExpense from "../components/ResetExpense";
 
 export default function SetBudget() {
   return (
