@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export default function UserHomePage() {
   return (
     <>
-      <section>
+      <section className="m-4">
         <div className="flex justify-center flex-col">
           <h1 className="text-2xl font-bold text-dark-green">
             Account Snapshot
@@ -32,7 +32,7 @@ export default function UserHomePage() {
           </div>
         </div>
 
-        <div>
+        <div className="flex flex-col">
           <h2 className="text-xl font-semibold text-dark-green">
             Transaction History
           </h2>
@@ -42,7 +42,7 @@ export default function UserHomePage() {
             to="/add-expense"
             className="text-bright-white bg-money-green hover:bg-alpine-green focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"
           >
-            Add More Expenses{" "}
+            Add More Expenses
           </NavLink>
         </div>
       </section>

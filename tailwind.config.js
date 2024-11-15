@@ -12,6 +12,7 @@ export default {
       'light-grey': '#f4f4f4',
       'bright-white': "#ffffff",
       'light-red':'#ff5757', 
+      'dark-red': '#bd0000',
 
     },
     extend: {

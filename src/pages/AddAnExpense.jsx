@@ -2,34 +2,34 @@ import ResetExpense from "../components/ResetExpense";
 
 export default function AddAnExpense() {
   return (
-    <section>
-      <h2 className="text-dark-green font-bold">Add an Expense</h2>
-      <div>
+    <section className="m-4">
+      <h2 className="text-2xl text-dark-green font-bold">Add an Expense</h2>
+      <div className="mb-2">
         <label
           htmlFor="expense-type-input"
           className="font-semibold text-dark-green"
         >
-          Name of Expense
+          Name of Expense:
         </label>
         <input
           type="text"
           id="expense-type-input"
-          className="w-full h-10 px-3 text-sm text-light-grey border border-r-0 rounded-r-none border-dark-green focus:outline-none rounded shadow-sm"
+          className="w-full h-10 px-3 text-sm text-light-grey border  border-dark-green focus:outline-none rounded shadow-sm"
           placeholder="Ex: Mortgage Payment"
         />
       </div>
 
-      <div>
+      <div className="mb-3">
         <label
           htmlFor="amount-type-input"
           className="font-semibold text-dark-green"
         >
-          Amount
+          Amount ($):
         </label>
         <input
           type="text"
           id="amount-type-input"
-          className="w-full h-10 px-3 text-sm text-light-grey border border-r-0 rounded-r-none border-dark-green focus:outline-none rounded shadow-sm"
+          className="w-full h-10 px-3 text-sm text-light-grey border  border-dark-green focus:outline-none rounded shadow-sm"
           placeholder="Ex: $878"
         />
       </div>
@@ -41,7 +41,9 @@ export default function AddAnExpense() {
         Add Expense
       </button>
 
-      <ResetExpense />
+      <div className="mt-10">
+        <ResetExpense />
+      </div>
     </section>
   );
 }

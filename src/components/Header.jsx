@@ -13,9 +13,9 @@ export default function Header() {
           />
 
           <div>
-            <h2 className="font-semibold text-2xl text-dark-green">
-              Smart Spend
-            </h2>
+            <NavLink to="/" className="font-bold text-2xl text-dark-green">
+              SMART SPEND
+            </NavLink>
             <h2 className="text-1xl text-bright-white">
               Personal Budgeting App
             </h2>
