@@ -11,7 +11,7 @@ export default function InitialHomePage() {
           </h2>
           <div className="flex justify-center">
             <NavLink
-              to="/log-in"
+              to="/auth/log-in"
               className="hover:bg-alpine-green alpine-green text-bright-white text-1xl p-3 m-2 rounded-lg bg-money-green"
             >
               Let's Budget !
