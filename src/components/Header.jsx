@@ -1,7 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useRouteLoaderData } from "react-router-dom";
 import pigLogo from "../assets/pig_icon.png";
 
 export default function Header() {
+  const token = useRouteLoaderData("root");
   return (
     <>
       <header className="flex w-full justify-between bg-money-green">
@@ -35,18 +36,38 @@ export default function Header() {
           >
             Dashboard
           </NavLink>
-          <NavLink
-            to="/log-in"
-            className="block  text-bright-white bg-money-green rounded hover:text-light-grey"
-          >
-            Login
-          </NavLink>
-          <NavLink
-            to="/sign-up"
-            className="block  text-bright-white bg-money-green rounded"
-          >
-            Sign Up
-          </NavLink>
+          {token === null ? (
+            <>
+              <NavLink
+                to="/auth/log-in"
+                className="block  text-bright-white bg-money-green rounded hover:text-light-grey"
+              >
+                Login
+              </NavLink>
+
+              <NavLink
+                to="/auth/sign-up"
+                className="block  text-bright-white bg-money-green rounded"
+              >
+                Sign Up
+              </NavLink>
+            </>
+          ) : (
+            <>
+              <NavLink
+                to="/user"
+                className="block  text-bright-white bg-money-green rounded"
+              >
+                USER INFO
+              </NavLink>
+              <NavLink
+                to="/auth/logout"
+                className="block  text-bright-white bg-money-green rounded"
+              >
+                Logout
+              </NavLink>
+            </>
+          )}
         </div>
       </header>
     </>

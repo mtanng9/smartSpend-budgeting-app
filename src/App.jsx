@@ -7,11 +7,14 @@ import SignUp, { SignUpAction } from "./pages/SignUp";
 import Root from "./pages/Root";
 import InitialHomePage from "./pages/InitialHomePage";
 import UserHomePage from "./pages/UserHomePage";
+import { AuthLogout, TokenLoader } from "./util/auth";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    loader: TokenLoader,
+    id: "root",
     children: [
       { index: true, element: <InitialHomePage /> },
       {
@@ -19,6 +22,7 @@ const router = createBrowserRouter([
         children: [
           { path: "sign-up", element: <SignUp />, action: SignUpAction },
           { path: "log-in", element: <LogIn />, action: LoginAction },
+          { path: "logout", loader: AuthLogout },
         ],
       },
       { path: "add-expense", element: <AddAnExpense /> },
