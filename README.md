@@ -1,8 +1,31 @@
-# React + Vite
+# Smart Spend Budgeting App Front End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This is a web application that allows you to set and manage your finances by entering your income and expenses. This app supports user authentication and persisting of user's data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![webpage screenshot]()
+
+## Table of Contents (Optional)
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+
+## Installation
+
+- npm install
+- npm run dev
+
+## Usage
+
+Website is available at: [Coming Soon]()
+
+## Credits
+
+My My, myself and I
+
+## License
+
+MIT
