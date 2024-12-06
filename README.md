@@ -4,7 +4,7 @@
 
 This is a web application that allows you to set and manage your finances by entering your income and expenses. This app supports user authentication and persisting of user's data.
 
-![webpage screenshot]()
+![webpage screenshot](https://github.com/mtanng9/smartSpend-budgeting-app/blob/main/Screenshot.png)
 
 ## Table of Contents (Optional)
 
