@@ -1,8 +1,7 @@
 # Smart Spend Budgeting App Front End
 
 ## Description
-
-This is a web application that allows you to set and manage your finances by entering your income and expenses. This app supports user authentication and persisting of user's data.
+I developed Smart Spend, a full-stack web application that simplifies income and expense tracking. Designed with React.js and Tailwind CSS for a sleek, user-friendly interface, the app ensures secure access via token-based authentication. It features Express.js and SQLite on the backend, delivering efficient data handling. Smart Spend empowers users to gain actionable insights into their spending habits and financial health, enabling better financial management.
 
 ![webpage screenshot](https://github.com/mtanng9/smartSpend-budgeting-app/blob/main/Screenshot.png)
 
