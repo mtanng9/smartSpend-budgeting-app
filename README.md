@@ -1,30 +1,52 @@
 # Smart Spend Budgeting App Front End
 
-## Description
-I developed Smart Spend, a full-stack web application that simplifies income and expense tracking. Designed with React.js and Tailwind CSS for a sleek, user-friendly interface, the app ensures secure access via token-based authentication. It features Express.js and SQLite on the backend, delivering efficient data handling. Smart Spend empowers users to gain actionable insights into their spending habits and financial health, enabling better financial management.
-
 ![webpage screenshot](https://github.com/mtanng9/smartSpend-budgeting-app/blob/main/Screenshot.png)
 
-## Table of Contents (Optional)
+## Project Overview
+Smart Spend is a full-stack web application I developed to simplify income and expense tracking. The application provides users with a sleek and user-friendly interface, enabling them to manage their finances efficiently while gaining insights into their spending habits and financial health.
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+## Design and Development Process
+The frontend of Smart Spend is built using **React.js** and **Tailwind CSS**, ensuring a clean and responsive design. For secure access, the application incorporates token-based authentication, allowing users to safely interact with their data. On the backend, **Express.js** and **SQLite** work together to handle data efficiently, providing a reliable and smooth experience.
 
-## Installation
+## Technologies Used
 
-- npm install
-- npm run dev
+- **React.js**: For building the dynamic and interactive frontend.
+- **Tailwind CSS**: To create a sleek and responsive design.
+- **Express.js**: For backend development and API management.
+- **SQLite**: For lightweight and efficient data storage.
 
-## Usage
+## Getting Started
+To run the application locally:
 
-Website is available at: [Coming Soon]()
+1. Clone the repository:
+   ```bash
+   git clone [repository-url]
+   ```
+2. Navigate to the project directory and install dependencies:
+   ```bash
+   cd smartSpend
+   npm install
+   ```
+3. Start the backend server:
+   ```bash
+   npm run server
+   ```
+4. Start the frontend:
+   ```bash
+   npm start
+   ```
 
-## Credits
+## Features
+- User-friendly interface for tracking income and expenses.
+- Token-based authentication for secure data access.
+- Categorized insights into financial transactions.
 
-My My, myself and I
+## Known Issues and Future Directions
+The current version of Smart Spend focuses on providing essential functionalities for financial management. A planned enhancement is the addition of a graphing feature, enabling users to visualize their financial data for deeper insights and analysis.
 
-## License
+## Future Plans
+- Add a graphing feature to visualize spending and income trends.
+- Implement additional financial analysis tools for improved user insights.
 
-MIT
+
+
